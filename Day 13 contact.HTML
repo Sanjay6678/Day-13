@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Day 13 contact
+	</title>
+	<style>
+		fieldset{
+			background-color:skyblue;
+		}
+		legend{
+			color:white;
+			font-size:20px;
+		}
+		button{
+			background-color:pink;
+		}
+		body{
+			background-color:blue
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color:white"> Contact me if you can</h1>
+	<form>
+		<fieldset>
+			<legend><b>Names</b></legend>
+		<!--My name form is created-->
+		<label for="firname1">First Name</label> 
+		<input type="text" id="firname1" name="firname1" value=""><br>
+		<label for="secname2">Second Name</label>
+		<input type="text" id="secname2" name="secname2" value=""><br>
+	</fieldset>
+		<!--This is my end of name form-->
+		<!--This is my Start of email form-->
+		<fieldset>
+			<legend><b>Email and phone</b></legend>
+		<label for="EMAIL">Email</label>
+		<input type="text" id="EMAIL" name="EMAIL" value=""><br>
+         <!--This is the end of my email form-->
+		<!--My start of the comment form-->
+		<label for="comment">Any comments about our service</label><br>
+		
+		<textarea name="message" rows="20" cols="30" placeholder="Comments"> </textarea>
+		
+		
+		<!--End of my comment form-->
+		<!--Start of my phone number form-->
+		<label for="ph">Phone number</label>
+		<input type="text" id="phone" name="phone" value="">
+	</fieldset>
+		<!--End of my phone number form-->
+		<!--Start of my City box-->
+		<fieldset>
+			<legend><b> City</b></legend>
+		<label for="city"><b> Where do you live</b></label>
+		<select id="city" name="city">
+			<option value="c0"> Select any one</option>
+			<option value="c1">UAE</option>
+			<option value="c2">India</option>
+			<option value="c3">America</option>
+			<option value="c4">Africa</option>
+		</select>
+	</fieldset>
+	<!--My start of my gender radio-->
+	<fieldset>
+		<legend><b>Gender</b></legend>
+		<input type="radio" id="gen1" name="gender" value="Male">
+		<label for="male">Male</label> &nbsp; &nbsp;
+
+		<input type="radio" id="gen2" name="gender" value="female">
+		<label for="male">Female</label> &nbsp; &nbsp;
+
+		<input type="radio" id="gen3" name="gender" value="I rather not say">
+		<label for="male">Rather NOT SAY</label> &nbsp; &nbsp;
+	</fieldset>
+		<!--End of my gender radio-->
+		<fieldset>
+			<legend><b> How should we contact you</b></legend>
+			<input type="checkbox" id="email" name="email" value="Email">
+			<label for="phone">Email</label>
+
+			<input type="checkbox" id="email" name="email" value="Phone">
+			<label for="phone">Phone</label>
+		</fieldset>
+		<button onclick="alert('you are awsome')"> Submit</button>
+</form>
+</body>
+</html>
